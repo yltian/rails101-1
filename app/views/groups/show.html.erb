@@ -1,8 +1,8 @@
 <div class="col-md-12">
-  <div class="group">
-    <%= link_to "Write a Post", new_group_post_path(@group), class: "btn btn-default pull-right" %>
+  <div class="group pull-right">
+    <%= link_to "Write a Post", new_group_post_path(@group), class: "btn btn-default"%>
     <% if current_user && current_user == @group.user %>
-    <%= link_to "Edit", edit_group_path(@group), class: "btn btn-primary pull-right" %>
+    <%= link_to "Edit", edit_group_path(@group), class: "btn btn-primary" %>
     <% end %>
   </div>
   <h2><%= @group.title %></h2>
